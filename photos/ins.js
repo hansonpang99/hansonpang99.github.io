@@ -74,7 +74,7 @@
     var _view2 = _interopRequireDefault(_view);
 
     function _interopRequireDefault(obj) {
-      return obj && obj.__esModule ? obj : {
+      return obj &amp;&amp; obj.__esModule ? obj : {
         default: obj
       };
     }
@@ -106,23 +106,23 @@
 
     var createVideoIncon = function createVideoIncon() {
       var $videoImg = document.querySelectorAll('.thumb a[data-type="video"]');
-      for (var i = 0, len = $videoImg.length; i < len; i++) {
+      for (var i = 0, len = $videoImg.length; i &lt; len; i++) {
         addMask($videoImg[i]);
       }
     };
     var render = function render(res) {
       var ulTmpl = "";
-      for (var j = 0, len2 = res.list.length; j < len2; j++) {
+      for (var j = 0, len2 = res.list.length; j &lt; len2; j++) {
         var data = res.list[j].arr;
         var liTmpl = "";
-        for (var i = 0, len = data.link.length; i < len; i++) {
+        for (var i = 0, len = data.link.length; i &lt; len; i++) {
           var minSrc = 'https://raw.github.com/hansonpang99/BlogBackup/master/min_photos/' + data.link[i];
           var src = 'https://raw.github.com/hansonpang99/BlogBackup/master/photos/' + data.link[i];
           var type = data.type[i];
           var target = src + (type === 'video' ? '.mp4' : '.jpg');
           src += '';
 
-          liTmpl += '<figure class="thumb" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">\
+          liTmpl += '<figure class="thumb" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">\
                 <a href="' + src + '" itemprop="contentUrl" data-size="1080x1080" data-type="' + type + '" data-target="' + src + '">\
                   <img class="reward-img" data-type="' + type + '" data-src="' + minSrc + '" src="/assets/img/empty.png" itemprop="thumbnail" onload="lzld(this)">\
                 </a>\
@@ -133,7 +133,7 @@
         <ul class="img-box-ul">' + liTmpl + '</ul>\
         </section>';
       }
-      document.querySelector('.instagram').innerHTML = '<div class="photos" itemscope itemtype="http://schema.org/ImageGallery">' + ulTmpl + '</div>';
+      document.querySelector('.instagram').innerHTML = '<div class="photos" itemscope="" itemtype="http://schema.org/ImageGallery">' + ulTmpl + '</div>';
       createVideoIncon();
       _view2.default.init();
     };
@@ -145,7 +145,7 @@
 
     var ctrler = function ctrler(data) {
       var imgObj = {};
-      for (var i = 0, len = data.length; i < len; i++) {
+      for (var i = 0, len = data.length; i &lt; len; i++) {
         var y = data[i].y;
         var m = data[i].m;
         var src = replacer(data[i].src);
@@ -172,7 +172,7 @@
         xhr.open('GET', './data.json?t=' + +new Date(), true);
 
         xhr.onload = function() {
-          if (this.status >= 200 && this.status < 300) {
+          if (this.status &gt;= 200 &amp;&amp; this.status &lt; 300) {
             var res = JSON.parse(this.response);
             searchData = res;
             success(searchData);
@@ -285,7 +285,7 @@
         global[fullname].prototype.getAttribute = function(name) {
           if (name === 'src') {
             var realSrc;
-            for (var i = 0, max = lazyAttrs.length; i < max; i++) {
+            for (var i = 0, max = lazyAttrs.length; i &lt; max; i++) {
               realSrc = original.call(this, lazyAttrs[i]);
               if (realSrc) {
                 break;
@@ -313,7 +313,7 @@
 
       // http://webreflection.blogspot.fr/2011/06/partial-polyfills.html
       function indexOf(value) {
-        for (var i = this.length; i-- && this[i] !== value;) {}
+        for (var i = this.length; i-- &amp;&amp; this[i] !== value;) {}
         return i;
       }
 
@@ -350,7 +350,7 @@
           target,
           item;
 
-        for (var i = 0; i < numNodes; i++) {
+        for (var i = 0; i &lt; numNodes; i++) {
 
           figureEl = thumbElements[i]; // 
 
@@ -371,11 +371,11 @@
             h: parseInt(size[1], 10)
           };
 
-          if (figureEl.children.length > 1) {
+          if (figureEl.children.length &gt; 1) {
             item.title = figureEl.children[1].innerHTML;
           }
 
-          if (linkEl.children.length > 0) {
+          if (linkEl.children.length &gt; 0) {
             item.msrc = linkEl.children[0].getAttribute('src');
             item.type = type;
             item.target = target;
@@ -394,7 +394,7 @@
 
       // find nearest parent element
       var closest = function closest(el, fn) {
-        return el && (fn(el) ? el : closest(el.parentNode, fn));
+        return el &amp;&amp; (fn(el) ? el : closest(el.parentNode, fn));
       };
 
       // triggers when user clicks on thumbnail
@@ -406,7 +406,7 @@
 
         // find root element of slide
         var clickedListItem = closest(eTarget, function(el) {
-          return el.tagName && el.tagName.toUpperCase() === 'FIGURE';
+          return el.tagName &amp;&amp; el.tagName.toUpperCase() === 'FIGURE';
         });
 
         if (!clickedListItem) {
@@ -424,7 +424,7 @@
           nodeIndex = 0,
           index;
 
-        for (var i = 0; i < numChildNodes; i++) {
+        for (var i = 0; i &lt; numChildNodes; i++) {
           if (childNodes[i].nodeType !== 1) {
             continue;
           }
@@ -436,29 +436,29 @@
           nodeIndex++;
         }
 
-        if (index >= 0) {
+        if (index &gt;= 0) {
           // open PhotoSwipe if valid index found
           openPhotoSwipe(index, clickedGallery);
         }
         return false;
       };
 
-      // parse picture index and gallery index from URL (#&pid=1&gid=2)
+      // parse picture index and gallery index from URL (#&amp;pid=1&amp;gid=2)
       var photoswipeParseHash = function photoswipeParseHash() {
         var hash = window.location.hash.substring(1),
           params = {};
 
-        if (hash.length < 5) {
+        if (hash.length &lt; 5) {
           return params;
         }
 
-        var vars = hash.split('&');
-        for (var i = 0; i < vars.length; i++) {
+        var vars = hash.split('&amp;');
+        for (var i = 0; i &lt; vars.length; i++) {
           if (!vars[i]) {
             continue;
           }
           var pair = vars[i].split('=');
-          if (pair.length < 2) {
+          if (pair.length &lt; 2) {
             continue;
           }
           params[pair[0]] = pair[1];
@@ -485,7 +485,7 @@
           galleryUID: galleryElement.getAttribute('data-pswp-uid'),
 
           getThumbBoundsFn: function getThumbBoundsFn(index) {
-            // See Options -> getThumbBoundsFn section of documentation for more info
+            // See Options -&gt; getThumbBoundsFn section of documentation for more info
             var thumbnail = items[index].el.getElementsByTagName('img')[0],
               // find thumbnail
               pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
@@ -505,7 +505,7 @@
           if (options.galleryPIDs) {
             // parse real index when custom PIDs are used 
             // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
-            for (var j = 0; j < items.length; j++) {
+            for (var j = 0; j &lt; items.length; j++) {
               if (items[j].pid == index) {
                 options.index = j;
                 break;
@@ -564,14 +564,14 @@
 
       // loop through all gallery elements and bind events
       var galleryElements = document.querySelectorAll(gallerySelector);
-      for (var i = 0, l = galleryElements.length; i < l; i++) {
+      for (var i = 0, l = galleryElements.length; i &lt; l; i++) {
         galleryElements[i].setAttribute('data-pswp-uid', i + 1);
         galleryElements[i].onclick = onThumbnailsClick;
       }
 
-      // Parse URL and open gallery if it contains #&pid=3&gid=1
+      // Parse URL and open gallery if it contains #&amp;pid=3&amp;gid=1
       var hashData = photoswipeParseHash();
-      if (hashData.pid && hashData.gid) {
+      if (hashData.pid &amp;&amp; hashData.gid) {
         openPhotoSwipe(hashData.pid, galleryElements[hashData.gid - 1], true, true);
       }
     };
@@ -614,7 +614,7 @@
         var container = opts.container = params.container || opts.container;
         var offset = opts.offset = params.offset || opts.offset;
 
-        for (var i = 0; i < instances.length; i++) {
+        for (var i = 0; i &lt; instances.length; i++) {
           if (instances[i].container === container) {
             return instances[i].isInViewport(elt, offset, cb);
           }
@@ -638,7 +638,7 @@
         return function() {
           var context = this,
             args = arguments;
-          var callNow = immediate && !timeout;
+          var callNow = immediate &amp;&amp; !timeout;
           clearTimeout(timeout);
           timeout = setTimeout(later, wait);
           if (callNow) func.apply(context, args);
@@ -657,11 +657,11 @@
         }
         return global.document.documentElement.compareDocumentPosition ?
           function(a, b) {
-            return !!(a.compareDocumentPosition(b) & 16);
+            return !!(a.compareDocumentPosition(b) &amp; 16);
           } :
           global.document.documentElement.contains ?
           function(a, b) {
-            return a !== b && (a.contains ? a.contains(b) : false);
+            return a !== b &amp;&amp; (a.contains ? a.contains(b) : false);
           } :
           function(a, b) {
             while (b = b.parentNode) {
@@ -761,10 +761,10 @@
           // The element must overlap with the visible part of the viewport
           var visible =
             (
-              (eltRect.right > viewport.left) &&
-              (eltRect.left < viewport.right) &&
-              (eltRect.bottom > viewport.top) &&
-              (eltRect.top < viewport.bottom)
+              (eltRect.right &gt; viewport.left) &amp;&amp;
+              (eltRect.left &lt; viewport.right) &amp;&amp;
+              (eltRect.bottom &gt; viewport.top) &amp;&amp;
+              (eltRect.top &lt; viewport.bottom)
             );
 
           return visible;
@@ -793,7 +793,7 @@
         }
 
         function indexOf(elt) {
-          for (var i = watches.length - 1; i >= 0; i--) {
+          for (var i = watches.length - 1; i &gt;= 0; i--) {
             if (watches[i][0] === elt) {
               return i;
             }
@@ -807,7 +807,7 @@
 
         function checkAll(cb) {
           return function() {
-            for (var i = watches.length - 1; i >= 0; i--) {
+            for (var i = watches.length - 1; i &gt;= 0; i--) {
               cb.apply(this, watches[i]);
             }
           };
@@ -846,7 +846,7 @@
             Array.prototype.slice.call(mutation.addedNodes),
             mutation.target
           );
-          return filter.call(nodes, watches.isWatched).length > 0;
+          return filter.call(nodes, watches.isWatched).length &gt; 0;
         }
       }
 
@@ -858,4 +858,22 @@
     /***/
   }
   /******/
-]);
+]);<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
