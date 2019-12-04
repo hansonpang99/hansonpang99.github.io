@@ -6,12 +6,9 @@
     <script src="//code.tidio.co/repqggqomafe0lexipwq32idp6nimmyn.js">    
     </script>
     <meta charset="utf-8">
-    <meta name="keywords" content="为什么会有突然暴动地心和平时无法理解的行为01, hansonpang的博客">
-    <meta name="description" content="今天突然变的很暴躁    
-
-
-今天起床很晚，一直到下午两点才起床吃饭，吃完饭开始看小说《九仙图》（存粹是不知道该干什么，打发时间！）。
-到了晚上去民族餐厅吃了馄饨，感觉很好吃。→→在吃饭的时候，耍手机在b站上看了一个视频，视频内容讲的是一">
+    <meta name="keywords" content="我在Traccar安装中走过的坑, hansonpang的博客">
+    <meta name="description" content="我在Traccar安装中走过的坑   
+11月29日的时候看到了一篇关于Traccar的文章（用 VPS 搭建现代全功能 GPS 追踪系统 （Traccar）），正好手头有VPS，就想要测试一下，所以12月3日的时候开始了测试。下面是测试的">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +16,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>为什么会有突然暴动地心和平时无法理解的行为01 | hansonpang的博客</title>
+    <title>我在Traccar安装中走过的坑 | hansonpang的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -300,13 +297,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        为什么会有突然暴动地心和平时无法理解的行为01
+                        我在Traccar安装中走过的坑
                     </div>
                 </div>
             </div>
@@ -417,8 +414,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/随笔/" target="_blank">
-                                <span class="chip bg-color">随笔</span>
+                            <a href="/tags/VPS/" target="_blank">
+                                <span class="chip bg-color">VPS</span>
+                            </a>
+                        
+                            <a href="/tags/软件安装/" target="_blank">
+                                <span class="chip bg-color">软件安装</span>
                             </a>
                         
                     </div>
@@ -432,21 +433,21 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-12-01
+                    2019-12-04
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        918
+                        1.2k
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        3 分
+                        5 分
                     </div>
                     
                 
@@ -462,28 +463,89 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="今天突然变的很暴躁"><a href="#今天突然变的很暴躁" class="headerlink" title="今天突然变的很暴躁"></a>今天突然变的很暴躁</h1><a id="more"></a>    
+                <h1 id="我在Traccar安装中走过的坑"><a href="#我在Traccar安装中走过的坑" class="headerlink" title="我在Traccar安装中走过的坑"></a>我在Traccar安装中走过的坑</h1><a id="more"></a>   
+<p>11月29日的时候看到了一篇关于Traccar的文章（<a href="https://mr96.me/1006.html" target="_blank" rel="noopener">用 VPS 搭建现代全功能 GPS 追踪系统 （Traccar）</a>），正好手头有VPS，就想要测试一下，所以12月3日的时候开始了测试。下面是测试的过程和遇到的问题及解决方法，方便自己以后回忆使用。     </p>
+<h2 id="官方提供的测试Demo"><a href="#官方提供的测试Demo" class="headerlink" title="官方提供的测试Demo"></a>官方提供的测试Demo</h2><p>参考网址： <a href="https://www.traccar.org/demo-server/" target="_blank" rel="noopener">Demo Servers</a><br>Demo server 4</p>
+<pre><code>Location: United Kingdom
+Domain name: demo4.traccar.org
+IP address: 46.101.24.212
+Port number: device specific     </code></pre><p>如果是上方的信息，那么访问的网址就是 <a href="http://46.101.24.212:80" target="_blank" rel="noopener">http://46.101.24.212:80</a>    手机端服务器地址为：<a href="http://46.101.24.212:5055" target="_blank" rel="noopener">http://46.101.24.212:5055</a>      </p>
+<h2 id="我的VPS系统配置"><a href="#我的VPS系统配置" class="headerlink" title="我的VPS系统配置"></a>我的VPS系统配置</h2><h3 id="IP"><a href="#IP" class="headerlink" title="IP"></a>IP</h3><p><img src="https://github.com/hansonpang99/photo/blob/master/VPS%E9%85%8D%E7%BD%AEIP20191204.png?raw=true" alt="">  </p>
+<h3 id="VPS-操作系统"><a href="#VPS-操作系统" class="headerlink" title="VPS 操作系统"></a>VPS 操作系统</h3><p><img src="https://github.com/hansonpang99/photo/blob/master/VPS%E9%85%8D%E7%BD%AEIP20191204.png?raw=true" alt="">  </p>
+<h2 id="Traccar安装过程"><a href="#Traccar安装过程" class="headerlink" title="Traccar安装过程"></a>Traccar安装过程</h2><p>参考官网安装过程  <a href="https://www.traccar.org/install-digitalocean/" target="_blank" rel="noopener">Traccar官网安装过程</a>   </p>
+<p>过程如下：<br>You can use commands below to install Traccar on any Ubuntu server. It can be any VPS provider or even a local server.<br>Commands</p>
+<p>#Update repository</p>
+<p>apt-get update</p>
+<p>#Install Java and MySQL server</p>
+<p>apt-get install unzip default-jre mysql-server</p>
+<p>#If you were not asked for MySQL password during installation process, run following command</p>
+<p>mysql -u root -p –execute=”GRANT ALL PRIVILEGES on <em>.</em> to ‘root’@’localhost’ IDENTIFIED WITH mysql_native_password BY ‘root’; FLUSH PRIVILEGES;”</p>
+<p>#Create “traccar” database (use password from previous step)</p>
+<p>echo “create database traccar” | mysql -u root -p</p>
+<p>#Download Traccar package for Linux</p>
+<p>wget <a href="https://github.com/traccar/traccar/releases/download/v3.16/traccar-linux-3.16.zip" target="_blank" rel="noopener">https://github.com/traccar/traccar/releases/download/v3.16/traccar-linux-3.16.zip</a></p>
+<p>#Un-zip package</p>
+<p>unzip traccar-linux-*.zip</p>
+<p>#Install Traccar service</p>
+<p>./traccar.run</p>
+<p>#Create config file</p>
+<p>nano traccar.xml</p>
+<p>#Example configuration (replace password if needed)</p>
+<!--?xml version='1.0' encoding='UTF-8'?-->
 
-<ul>
-<li>今天起床很晚，一直到下午两点才起床吃饭，吃完饭开始看小说《九仙图》（存粹是不知道该干什么，打发时间<br>！）。</li>
-<li>到了晚上去民族餐厅吃了馄饨，感觉很好吃。→→在吃饭的时候，耍手机在b站上看了一个视频，视频内容讲的是一个人回村创业——办养殖场，然后机器要经过一家村民田地边的路，这家村民不让从那里过。后续经过交涉，那家村民提出两个解决方案：1. 拿出3万块钱，你可以从这里过；2. 你自己改道。当时讨论了一下很生气，路是大家的你自己为什么要占着不让别人用。</li>
-<li>吃过饭，回到宿舍，回到宿舍以后先把宗教知识竞赛的截图发了一下，然后耍手机看到了关于开车的视频，其中有很多都是不遵守交通规则的行为，还有一部分是碰瓷和拦路设卡的；看到这里让我想到了自己最近开车的经历——1.有一次是我开车在路上走，突然右边出现一辆车超车，（这辆车没有提前鸣笛，然后超车距离我的车还很近）当时真的吓我一跳。2. 第二是最近在路上开车，然后有很多次车辆转向不打转向灯，还有突然停车，这些都是什么行为啊。 </li>
-<li>到了这里，我已经和室友说了很多关于以上事情的话了，而且心情很是激动，不能理解自己为什么会突然有这么大的反应。 </li>
-</ul>
-<h1 id="人总是突然间就长大了"><a href="#人总是突然间就长大了" class="headerlink" title="人总是突然间就长大了"></a>人总是突然间就长大了</h1><ul>
-<li><p>在写完上面一个标题以后，我突然感觉自己变得和以前不一样了，以前的自己根本没有感受或者经历这些事情，现在经历了突然感觉到以前自己的一些想法是多么的幼稚，不全面。  </p>
+
+
+<properties>
+
+<pre><code>&lt;entry key="config.default"&gt;./conf/default.xml&lt;/entry&gt;
+
+&lt;entry key='web.port'&gt;80&lt;/entry&gt;
+
+&lt;entry key='geocoder.enable'&gt;false&lt;/entry&gt;
+
+&lt;entry key='database.driver'&gt;com.mysql.jdbc.Driver&lt;/entry&gt;
+&lt;entry key='database.url'&gt;jdbc:mysql://localhost/traccar?allowMultiQueries=true&amp;amp;autoReconnect=true&amp;amp;useUnicode=yes&amp;amp;characterEncoding=UTF-8&amp;amp;sessionVariables=sql_mode=''&lt;/entry&gt;
+&lt;entry key='database.user'&gt;root&lt;/entry&gt;
+&lt;entry key='database.password'&gt;root&lt;/entry&gt;
+
+&lt;entry key='server.timeout'&gt;120&lt;/entry&gt;</code></pre></properties>
+
+<p>#Replace default config file</p>
+<p>cp traccar.xml /opt/traccar/conf/</p>
+<p>#Remove installer</p>
+<p>rm -f traccar.run README.txt traccar-linux-*.zip</p>
+<p>#Configure cron job to clear old logs daily (optional step)</p>
+<p>printf ‘#!/bin/sh\nfind /opt/traccar/logs/ -mtime +5 -type f -delete\n’ &gt; /etc/cron.daily/traccar-clear-logs &amp;&amp; chmod +x /etc/cron.daily/traccar-clear-logs</p>
+<p>#Start service (see Linux instructions for up to date commands)</p>
+<p>/opt/traccar/bin/startDaemon.sh</p>
+<p>#Check that service started correctly</p>
+<p>tail -f /opt/traccar/logs/wrapper.log.*    </p>
+<h2 id="安装过程中遇到的问题（真心难受，下次看安装教程一定要直接看官网！！！！！！！！！！）"><a href="#安装过程中遇到的问题（真心难受，下次看安装教程一定要直接看官网！！！！！！！！！！）" class="headerlink" title="安装过程中遇到的问题（真心难受，下次看安装教程一定要直接看官网！！！！！！！！！！）"></a>安装过程中遇到的问题（真心难受，下次看安装教程一定要直接看官网！！！！！！！！！！）</h2><h3 id="编写教程的时候上传图片到github的过程（即使用git提交信息的过程（操作命令））"><a href="#编写教程的时候上传图片到github的过程（即使用git提交信息的过程（操作命令））" class="headerlink" title="编写教程的时候上传图片到github的过程（即使用git提交信息的过程（操作命令））"></a>编写教程的时候上传图片到github的过程（即使用git提交信息的过程（操作命令））</h3><p>我使用到的操作命令：<br><img src="https://github.com/hansonpang99/photo/blob/master/git%E4%B8%8A%E4%BC%A020191204.png?raw=true" alt=""><br>参考：<a href="https://jingyan.baidu.com/article/359911f5a4fe4b57fe03060d.html" target="_blank" rel="noopener">git提交代码五部曲</a>    </p>
+<h3 id="Traccar安装使用到的操作命令"><a href="#Traccar安装使用到的操作命令" class="headerlink" title="Traccar安装使用到的操作命令"></a>Traccar安装使用到的操作命令</h3><ul>
+<li><ol>
+<li>nano<br>nano [选项] [[+行,列] 文件名]…<br>nano 是一个字符终端的文本编辑器，有点像DOS下的editor程序。它比vi/vim要简单得多，比较适合Linux初学者使用。某些Linux发行版的默认编辑器就是nano。 <a href="https://ipcmen.com/nano" target="_blank" rel="noopener">参考网址</a>      </li>
+</ol>
 </li>
-<li><p>比如以前自己不会开车，认为开车的人很厉害；对那些有路怒症的人表示不解。<br>现在会开车了，感觉开车也就是那样，学会了就是学会了，比数学题还要简单；<br>对于路怒症的那些人也有了理解——实在是一些人不遵守交通规则导致的呀（当然实习的新手不熟悉规则可以理解，但是这种现象太常见了，就很难受，你是新手可以开的慢一点嘛不要那么猛！你是老手还这样开车究竟是什么给的你勇气，梁静茹吗？）<br><img src="http://p6.qhimg.com/bdm/480_296_0/t01e501e8d6a74a1a1d.jpg" alt="">      </p>
+<li><ol start="2">
+<li>mysql -uroot -p     连接进入mySQL<br>输入密码：<br>show databases;       显示mySQL服务器相关设置<br>exit；                退出<br>（进入mySQL数据库后，所有的命令以；结束）    </li>
+</ol>
+</li>
+<li><ol start="3">
+<li>netstat   -nultp   查看服务器已使用的所有端口    </li>
+</ol>
 </li>
 </ul>
-<h1 id="希望以后的自己不要活成这样的人"><a href="#希望以后的自己不要活成这样的人" class="headerlink" title="希望以后的自己不要活成这样的人"></a>希望以后的自己不要活成这样的人</h1><ul>
-<li>以后的你不要变得无理，要有理性。 人一生遇到的事是由10%和90%组成的——人生中90%的事都是自己做错的10%的事引起的，所以只要我们处理好那10%的事就可以了。 </li>
-</ul>
-<h1 id="大号的Words"><a href="#大号的Words" class="headerlink" title="大号的Words"></a>大号的Words</h1><p>生活中的10％是由发生在你身上的事情组成，<br>而另外的90％，<br>则是由你对所发生的事情如何反应所决定。<br>倘若你做错1件事，<br>你就可能需要做9件事去弥补它，<br>追着错误跑会越错越远。<br>所以并没有那么多让人烦恼的事情，<br>只要正确处理那10％就可以了。     </p>
-<iframe height="450" width="800" src="https://v.qq.com/txp/iframe/player.html?vid=y3028wj9t7o" frameborder="0" 'allowfullscreen'="">
-</iframe>
-
-
+<h2 id="在进行VPS上的Traccer安装过程中的分支——windows版本Traccer的安装"><a href="#在进行VPS上的Traccer安装过程中的分支——windows版本Traccer的安装" class="headerlink" title="在进行VPS上的Traccer安装过程中的分支——windows版本Traccer的安装"></a>在进行VPS上的Traccer安装过程中的分支——windows版本Traccer的安装</h2><h3 id="安装过程如下："><a href="#安装过程如下：" class="headerlink" title="安装过程如下："></a>安装过程如下：</h3><p>参考官网地址：<a href="https://www.traccar.org/windows/" target="_blank" rel="noopener">Windows</a><br>该教程主要看视频介绍。</p>
+<h3 id="安装结束后配置手机端服务器地址（bug。自己没有好好看官网网介绍）"><a href="#安装结束后配置手机端服务器地址（bug。自己没有好好看官网网介绍）" class="headerlink" title="安装结束后配置手机端服务器地址（bug。自己没有好好看官网网介绍）"></a>安装结束后配置手机端服务器地址（bug。自己没有好好看官网网介绍）</h3><ol>
+<li><p>手机端下载Traccar，配置设备编码，配置服务器地址，配置位置精度，配置地位频率等   </p>
+</li>
+<li><p>在配置服务器地址时，我直接使用了电脑浏览器搜索 ip 获得的ip地址，结果GPS数据发送失败。<br>查找原因后发现：服务器地址必须是  公网IP，不然无法访问<br>参考网址：<a href="https://hsk.oray.com/news/5928.html" target="_blank" rel="noopener">分辨IP是公网IP还是内网IP的方法</a><br>通过上述方法查看发现，我自己的ip是内网ip，无法进行访问，所以上面的windows安装操作都是徒劳的。。。。<br>关于将自己的内网ip映射到公网ip这种操作，相关的网站有 花生壳 网站，但是这种服务是收费的所以就没有进行测试。  </p>
+</li>
+<li><p>在配置服务器地址时需要用到端口信息，具体参考下方网址：<a href="https://www.traccar.org/devices/" target="_blank" rel="noopener">Supported Devices</a><br>If you are using Traccar Client app, you don’t need to look for your phone model in this list. Port for Traccar Client is always 5055.<br>对于手机app直接使用5055端口就行。   </p>
+</li>
+</ol>
+<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>我的Debian系统无法安装Traccar<br>windows版的Traccar可以安装但以为我的ip是内网ip所以无法收到手机传来的定位信息。也无法使用。    </p>
+<p><img src="http://p1.qhimg.com/bdm/480_296_0/t011c55dc8b50f55c63.jpg" alt=""></p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -660,9 +722,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《为什么会有突然暴动地心和平时无法理解的行为01》
+                    《我在Traccar安装中走过的坑》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/12/01/为什么会有突然暴动地心和平时无法理解的行为01/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/12/04/我在Traccar安装中走过的坑/" property="cc:attributionName"
                rel="cc:attributionURL">
                 hansonpang
             </a> 采用
@@ -702,9 +764,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2019/12/04/我在Traccar安装中走过的坑/">
                     <div class="card-image">
@@ -723,9 +786,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-12-04
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-12-04
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-user fa-fw"></i>
@@ -734,6 +797,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -756,29 +820,33 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/09/15/尝试新的主题yilia-plus/">
+                <a href="/2019/12/01/为什么会有突然暴动地心和平时无法理解的行为01/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="尝试新的主题yilia-plus">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="为什么会有突然暴动地心和平时无法理解的行为01">
                         
-                        <span class="card-title">尝试新的主题yilia-plus</span>
+                        <span class="card-title">为什么会有突然暴动地心和平时无法理解的行为01</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            尝试改进版的yilia主题——yilia-plus参考网址： https://zhousiwei.gitee.io/2019/07/25/hexo%E4%B8%BB%E9%A2%98%E4%B9%8Bhexo-theme-yilia-plu
+                            今天突然变的很暴躁    
+
+
+今天起床很晚，一直到下午两点才起床吃饭，吃完饭开始看小说《九仙图》（存粹是不知道该干什么，打发时间！）。
+到了晚上去民族餐厅吃了馄饨，感觉很好吃。→→在吃饭的时候，耍手机在b站上看了一个视频，视频内容讲的是一
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-15
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-12-01
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-user fa-fw"></i>
-                            CoolPlayer
+                            hansonpang
                             
                         </span>
                     </div>
@@ -786,12 +854,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/学习日志/" target="_blank">
-                        <span class="chip bg-color">学习日志</span>
-                    </a>
-                    
-                    <a href="/tags/应用测试/" target="_blank">
-                        <span class="chip bg-color">应用测试</span>
+                    <a href="/tags/随笔/" target="_blank">
+                        <span class="chip bg-color">随笔</span>
                     </a>
                     
                 </div>
