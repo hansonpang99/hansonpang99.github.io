@@ -514,6 +514,46 @@ $(function () {
         </div>
     </div>
 </div>
+<style>
+    .video-container-add-on{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .video-container-add-on iframe{
+        width: 70%;
+        height: 500px;
+        margin: 20px;
+    }
+    ::-webkit-scrollbar {
+        width: 0;
+        height: 0px;
+        background-color: transparent;
+    }
+    .video-container-add-on .title{
+        font-weight: 700;
+        font-size: 2rem;
+        text-align: center;
+    }
+    @media (max-width:768px) {
+        .video-container-add-on iframe{
+            width: 80%;
+            height: 250px;
+        }
+    }
+</style>
+
+<section class='video-container-add-on'>
+    <div class="title">
+        视频
+    </div>
+    <iframe frameborder="0"   src="https://v.qq.com/x/page/e0700zhauwc.html?auto=0&autoplay=0" allowfullscreen=""></iframe>
+<iframe frameborder="0"    src="https://v.qq.com/x/page/e0700zhauwc.html?auto=0&autoplay=0" allowfullscreen=""></iframe>
+<iframe frameborder="0"    src="https://v.qq.com/x/page/e0700zhauwc.html?auto=0&autoplay=0" allowfullscreen=""></iframe>
+<iframe frameborder="0"    src="https://v.qq.com/x/page/e0700zhauwc.html?auto=0&autoplay=0" allowfullscreen=""></iframe>
+</section>
 
 <script src="/libs/aplayer/APlayer.min.js"></script>
 <script>
