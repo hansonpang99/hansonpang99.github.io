@@ -4,6 +4,29 @@
   
     
     <entry>
+      <title>MarkDown语法基础与进阶</title>
+      <link href="/2020/03/16/MarkDown%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E4%B8%8E%E8%BF%9B%E9%98%B6/"/>
+      <url>/2020/03/16/MarkDown%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E4%B8%8E%E8%BF%9B%E9%98%B6/</url>
+      
+        <content type="html"><![CDATA[<h1 id="MarkDown语法基础与进阶"><a href="#MarkDown语法基础与进阶" class="headerlink" title="MarkDown语法基础与进阶"></a>MarkDown语法基础与进阶</h1><h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><hr><p>网上又很多介绍，具体参考以下几个网址：<br><a href="https://www.cnblogs.com/nickchen121/p/10821946.html" target="_blank" rel="noopener">https://www.cnblogs.com/nickchen121/p/10821946.html</a><br><a href="https://blog.csdn.net/witnessai1/article/details/52551362" target="_blank" rel="noopener">https://blog.csdn.net/witnessai1/article/details/52551362</a>   </p><hr><h2 id="进阶"><a href="#进阶" class="headerlink" title="进阶"></a>进阶</h2><ul><li><p>①如何使图片（文章）居中显示      </p><p>  markdown语法本身是不支持图片居中显示的，这里需要借用前段代码格式来实现：    </p><pre><code>      &lt;div align = center&gt;       &lt;img src = "http://p9.qhimg.com/bdm/480_296_0/t013a4ed4683039d101.jpg" /&gt;       &lt;/div&gt;</code></pre><p>效果如下图所示：   </p><div align="center"> <img src="http://p9.qhimg.com/bdm/480_296_0/t013a4ed4683039d101.jpg"> </div></li></ul><hr><p>文章内容也是如此：   </p><pre><code>```      &lt;div align = center&gt;     文章内容    &lt;/div&gt;```     </code></pre><p>效果如下:</p><div align="center"> 文章内容 </div>    <hr><h2 id="未完待续。"><a href="#未完待续。" class="headerlink" title="未完待续。"></a>未完待续。</h2><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 学习 </tag>
+            
+            <tag> 计算机语言学习 </tag>
+            
+            <tag> 理论知识学习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>BigHao&#39;sWords</title>
       <link href="/2020/03/07/BigHao-sWords/"/>
       <url>/2020/03/07/BigHao-sWords/</url>
@@ -136,11 +159,11 @@
       
         <tags>
             
+            <tag> 学习 </tag>
+            
             <tag> 计算机知识学习 </tag>
             
             <tag> 软件测试 </tag>
-            
-            <tag> 学习 </tag>
             
         </tags>
       
@@ -180,11 +203,11 @@
       
         <tags>
             
+            <tag> 学习 </tag>
+            
             <tag> 计算机知识学习 </tag>
             
             <tag> 软件测试 </tag>
-            
-            <tag> 学习 </tag>
             
         </tags>
       
@@ -203,11 +226,11 @@
       
         <tags>
             
+            <tag> 学习 </tag>
+            
             <tag> 计算机知识学习 </tag>
             
             <tag> 软件测试 </tag>
-            
-            <tag> 学习 </tag>
             
         </tags>
       
