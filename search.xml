@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>test</title>
+      <link href="/2020/03/24/test/"/>
+      <url>/2020/03/24/test/</url>
+      
+        <content type="html"><![CDATA[<h1 id="标题一"><a href="#标题一" class="headerlink" title="标题一"></a>标题一</h1><p>为什么她（他）总是给我提各种要求，更好的物质条件，不是应该两个人一起创造的吗？<br>庆幸的是，爱情不是一个考验，它应该是两个人都舒服的相互提携。不能把你的人生过成一张问卷，让你的伴侣每天都在做题。但不幸的是，别人对你的态度，都是你允许的。  </p><h1 id="标题二"><a href="#标题二" class="headerlink" title="标题二"></a>标题二</h1><p>为什么她（他）总是给我提各种要求，更好的物质条件，不是应该两个人一起创造的吗？<br>庆幸的是，爱情不是一个考验，它应该是两个人都舒服的相互提携。不能把你的人生过成一张问卷，让你的伴侣每天都在做题。但不幸的是，别人对你的态度，都是你允许的。    </p><hr><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>MarkDown语法基础与进阶</title>
       <link href="/2020/03/16/MarkDown%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E4%B8%8E%E8%BF%9B%E9%98%B6/"/>
       <url>/2020/03/16/MarkDown%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80%E4%B8%8E%E8%BF%9B%E9%98%B6/</url>
