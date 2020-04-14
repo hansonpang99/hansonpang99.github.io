@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Movies</title>
+      <link href="/2020/04/14/Movies/"/>
+      <url>/2020/04/14/Movies/</url>
+      
+        <content type="html"><![CDATA[<h2 id="MOVIE"><a href="#MOVIE" class="headerlink" title="MOVIE"></a>MOVIE</h2><hr><h3 id="随便放，先"><a href="#随便放，先" class="headerlink" title="随便放，先"></a>随便放，先</h3><ul><li><p>姜文三部曲：《让子弹飞》，《一步之遥》，《邪不压正》<br><img src="https://bkimg.cdn.bcebos.com/pic/1c950a7b02087bf445efb670f2d3572c11dfcf2c?x-bce-process=image/watermark,g_7,image_d2F0ZXIvYmFpa2UxNTA=,xp_5,yp_5" alt="">    </p><p><img src="https://bkimg.cdn.bcebos.com/pic/5d6034a85edf8db13618dd490423dd54564e74ed?x-bce-process=image/watermark,g_7,image_d2F0ZXIvYmFpa2U4MA==,xp_5,yp_5" alt="">      </p><p><img src="https://bkimg.cdn.bcebos.com/pic/d50735fae6cd7b89585e1d74032442a7d9330e12?x-bce-process=image/watermark,g_7,image_d2F0ZXIvYmFpa2U5Mg==,xp_5,yp_5" alt=""> </p></li></ul><hr><ul><li>《饥饿站台》<br><img src="https://pics0.baidu.com/feed/203fb80e7bec54e7c336ea6feee8f4564dc26ac4.png?token=cc145ac50c799c8bf4f992eedb3dfc7f" alt="">       </li></ul><hr><ul><li>《碟中谍系列》<br><img src="https://bkimg.cdn.bcebos.com/pic/e61190ef76c6a7ef2f723e84f5faaf51f3de6638?x-bce-process=image/crop,x_0,y_1,w_600,h_396/watermark,g_7,image_d2F0ZXIvYmFpa2U4MA==,xp_5,yp_5" alt="">      </li></ul><hr><ul><li>《魔女》<br><img src="https://bkimg.cdn.bcebos.com/pic/b58f8c5494eef01f74c41412eefe9925bd317d10?x-bce-process=image/watermark,g_7,image_d2F0ZXIvYmFpa2U4MA==,xp_5,yp_5" alt="">        </li></ul><hr><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 电影 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>test</title>
       <link href="/2020/03/24/test/"/>
       <url>/2020/03/24/test/</url>
@@ -27,11 +46,11 @@
       
         <tags>
             
+            <tag> 理论知识学习 </tag>
+            
             <tag> 学习 </tag>
             
             <tag> 计算机语言学习 </tag>
-            
-            <tag> 理论知识学习 </tag>
             
         </tags>
       
@@ -92,9 +111,9 @@
       
         <tags>
             
-            <tag> 学习 </tag>
-            
             <tag> 理论知识学习 </tag>
+            
+            <tag> 学习 </tag>
             
         </tags>
       
@@ -195,9 +214,9 @@
       
         <tags>
             
-            <tag> 学习 </tag>
-            
             <tag> 理论知识学习 </tag>
+            
+            <tag> 学习 </tag>
             
         </tags>
       
@@ -262,9 +281,9 @@
       
         <tags>
             
-            <tag> 学习 </tag>
-            
             <tag> 理论知识学习 </tag>
+            
+            <tag> 学习 </tag>
             
         </tags>
       
