@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Record my personalized signature</title>
+      <link href="/2020/04/19/Record-my-personalized-signature/"/>
+      <url>/2020/04/19/Record-my-personalized-signature/</url>
+      
+        <content type="html"><![CDATA[<h3 id="格式-内容-时间"><a href="#格式-内容-时间" class="headerlink" title="格式:内容+时间"></a>格式:内容+时间</h3><h2 id="2019年"><a href="#2019年" class="headerlink" title="2019年"></a>2019年</h2><ul><li>只有越来越强大，才能越来越童话。  –2019          </li></ul><hr><h2 id="2020年"><a href="#2020年" class="headerlink" title="2020年"></a>2020年</h2><ul><li><p>年龄大了，眼睛里还总是会进砖头。    –20200415        </p></li><li><p>从来如此，便对吗？            –20200418</p></li></ul><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 生活 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Movies</title>
       <link href="/2020/04/14/Movies/"/>
       <url>/2020/04/14/Movies/</url>
@@ -90,9 +109,9 @@
       
         <tags>
             
-            <tag> 随笔 </tag>
-            
             <tag> 生活 </tag>
+            
+            <tag> 随笔 </tag>
             
         </tags>
       
